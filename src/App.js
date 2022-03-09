@@ -11,10 +11,9 @@ import Home from './containers/Home'
 class App extends React.Component {
   render() {
     return (
-      <div>
-        {/* LET'S GET STARTED! */}
-        {/* <Introduction /> */}
-        {/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
+      <div className='App'>
+
+{/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
 
         <BrowserRouter>
           <Routes>
@@ -23,7 +22,7 @@ class App extends React.Component {
           </Routes>
         </BrowserRouter>
 
-        {/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
+{/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
       </div>
     )
   }
