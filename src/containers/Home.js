@@ -1,11 +1,16 @@
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+import Navigation from '../components/Navigation';
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+// H O M E  P A G E
 const Home = () => {
     return (
         <div>
-            THE HOME PAGE WILL LIVE HERE
+{/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
+            <Navigation />
+{/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
         </div>
     )
 }
