@@ -1,8 +1,10 @@
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+import { Route, Switch } from 'react-router-dom'
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import './App.css'
-import Introduction from './containers/Introduction';
+import Introduction from './containers/Introduction'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 class App extends React.Component {
@@ -10,6 +12,7 @@ class App extends React.Component {
     return (
       <div>
         LET'S GET STARTED!
+        <Introduction />
       </div>
     )
   }
