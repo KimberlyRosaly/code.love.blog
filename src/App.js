@@ -11,8 +11,17 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        LET'S GET STARTED!
-        <Introduction />
+        {/* LET'S GET STARTED! */}
+        {/* <Introduction /> */}
+        {/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
+
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Introduction />} />
+          </Routes>
+        </BrowserRouter>
+
+        {/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
       </div>
     )
   }
