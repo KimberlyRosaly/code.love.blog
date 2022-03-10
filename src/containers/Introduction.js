@@ -22,13 +22,15 @@ function Introduction() {
     // WHEN C O M P O N E N T IS M O U N T E D...
     useEffect(() => {
         // MY FUNCTION IS INVOKED AFTER T I M E  (MILLISECONDS) HAS E L A P S E D
-        setTimeout(() => {pushUserHome()}, 1500);
+        setTimeout(() => {pushUserHome()}, 3000);
     })
 
     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     return (
-        <div>
-            ▀▄▀▄▀▄ I N T R O   L I V E S   H E R E ! ▄▀▄▀▄▀
+        <div className='introduction'>
+            <div>
+                ▀▄▀▄▀▄ I N T R O   L I V E S   H E R E ! ▄▀▄▀▄▀
+            </div>
         </div>
     )
     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

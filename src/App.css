@@ -10,3 +10,15 @@ body {
   color: violet;
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* GIF IMAGE SITS IN BACKGROUND AND COVERS PAGE WITH 100% OF VIEWPORT HEIGHT SET */
+.introduction {
+  background-image: url('https://64.media.tumblr.com/2dd92540920d62ab429ddcd1e2275280/64b60fa04abbc797-b1/s400x600/e309828d2c422123ba766703a336774a6034270e.gif');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;  
+}
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
