@@ -13,6 +13,8 @@ const Navigation = () => {
             <Link to={'/loves'}>g o  h o m e</Link>
             <br />
             <Link to={'/loves/code'}>g o  c o d e</Link>
+            <br />
+            <Link to={'/loves/code/blogs'}>g o  b l o g</Link>
         </div>
     )
 }
