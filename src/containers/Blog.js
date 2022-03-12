@@ -1,6 +1,8 @@
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+import { sanitize } from 'dompurify'
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import blogsData from '../assets/blogsData'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
@@ -16,7 +18,7 @@ const Blog = () => {
                 <div>
                     <h1>{b.title}</h1>
                     <h3>{b.date} | {b.time}</h3>                    
-                    <div dangerouslySetInnerHTML={{ __html: `${b.content}` }} />
+                    <div dangerouslySetInnerHTML={{ __html: sanitize(b.content) }} />
                     <br />
                 </div>
             )}
