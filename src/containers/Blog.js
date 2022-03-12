@@ -15,8 +15,9 @@ const Blog = () => {
             {blogsData.map((b) => 
                 <div>
                     <h1>{b.title}</h1>
-                    <h3>{b.date} | {b.time}</h3>
-                    <p>{b.content}</p>
+                    <h3>{b.date} | {b.time}</h3>                    
+                    <div dangerouslySetInnerHTML={{ __html: `${b.content}` }} />
+                    <br />
                 </div>
             )}
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}

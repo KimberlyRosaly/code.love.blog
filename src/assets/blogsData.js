@@ -17,7 +17,7 @@ const blogsData = [
         date: "00-00-0000",
         time: "00:00XX",
         title: "ASDFJKLZXCVBNMQWERTYUIOP",
-        content: "ASDFJKLZXCVBNMQWERTYUIOPASDFJKLZXCVBNMQWERTYUIOPASDFJKLZXCVBNMQWERTYUIOPASDFJKLZXCVBNMQWERTYUIOPASDFJKLZXCVBNMQWERTYUIOPASDFJKLZXCVBNMQWERTYUIOPASDFJKLZXCVBNMQWERTYUIOP"
+        content: "this is a test <h1> this is <hr /> another test </h1>"
     }
 ]
 export default blogsData;
