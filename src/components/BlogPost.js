@@ -8,10 +8,19 @@ import { sanitize } from 'dompurify'
 // F U N C T I O N A L   C O M P O N E N T
 const BlogPost = (props) => {
     return (
-        <div dangerouslySetInnerHTML={{ __html: sanitize(props.blog.content) }}>
-            {/* A SINGLE BLOG'S CONTENT WILL LIVE HERE */}
-            {/* HTML INJECTION SANITIZED TO HELP PREVENT XSS ATTACKS */}
-            {/* TEXT SET DANGEROUSLY BECAUSE OF DESIRED HTML FORMATTING WANTING TO BE RENDERED */}
+        <div className='b-post-container'>
+            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
+            <div className='b-content-side'>
+                <div dangerouslySetInnerHTML={{ __html: sanitize(props.blog.content) }} />
+                {/* A SINGLE BLOG'S CONTENT WILL LIVE HERE */}
+                {/* HTML INJECTION SANITIZED TO HELP PREVENT XSS ATTACKS */}
+                {/* TEXT SET DANGEROUSLY BECAUSE OF DESIRED HTML FORMATTING WANTING TO BE RENDERED */}
+            </div>
+            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
+            <div className='b-image-side'>
+                <img src={props.blog.image} alt="ayo, some cool art is here" />
+            </div>
+            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
         </div>
     )
 }
