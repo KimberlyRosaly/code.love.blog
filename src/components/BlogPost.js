@@ -7,6 +7,7 @@ const BlogPost = (props) => {
     return (
         <div>
             {/* A SINGLE BLOG'S CONTENT WILL LIVE HERE */}
+            {props.blog.content}
         </div>
     )
 }
