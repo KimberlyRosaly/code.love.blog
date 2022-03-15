@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: solid green 1px;
+  /* border: solid green 1px; */
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -18,6 +18,7 @@ body {
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* ============================== I N T R O */
 /* GIF IMAGE SITS IN BACKGROUND AND COVERS PAGE WITH 100% OF VIEWPORT HEIGHT SET */
 .introduction {
   background-image: url('https://64.media.tumblr.com/2dd92540920d62ab429ddcd1e2275280/64b60fa04abbc797-b1/s400x600/e309828d2c422123ba766703a336774a6034270e.gif');
@@ -25,7 +26,34 @@ body {
   background-size: cover;
   height: 100vh;  
 }
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =============================== B L O G  */
+.b-container {
+  color: green;  
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.b-dropdown-item {
+  list-style-type: none;
+  border: solid green 1px;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.b-post-container {
+  display: flex;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  flex-direction: row;
+  align-content: center;
+}
+.b-image-side {
+  flex: 0 0 50%;
 
-
-
+}
+  .b-image-side img {
+    max-width: 100%;  
+  }
+  
+  .b-content-side {
+  flex: 0 0 50%;
+}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
