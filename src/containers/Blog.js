@@ -1,6 +1,9 @@
 import React from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-import blogsData from '../assets/blogsData';
+import blogsData from '../assets/blogsData'
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+import BlogMenu from '../components/BlogMenu'
+import BlogPost from '../components/BlogPost'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 // B L O G   P A G E
@@ -12,7 +15,11 @@ class Blog extends React.Component {
     }  
 
     handleClick = (event, blogID) => {
-      
+      // ITERATE THROUGH ALL THE BLOG OBJECTS IMPORTED FROM THE BLOGSDATA FILE
+      // GRAB ONTO THE 1 BLOG WITH THE MATCHING ID - GRABBED FROM THE TITLE THE USER CLICKED
+      const selectedBlog = blogsData.find((eachBlog) => eachBlog.id == blogID)
+      // SET THE STATE PROPERTY TO HANG ONTO THE MATCHING BLOG OBJECT
+      this.setState({blogSelected: selectedBlog})
     }
     
     // CONDITIONALLY RENDER WHAT SHOWS UP INSIDE THE BLOG PAGE CONTAINER
@@ -21,15 +28,18 @@ class Blog extends React.Component {
       if (this.state.blogSelected) {
         return (
           <div className='b-container'>
-            <div>{/* BLOG MENU FEATURING TITLES OF POSTS */}</div>
-            <div>{/* BLOG CONTENT OF A USER-SELECTED POST */}</div>
+            {/* BLOG MENU FEATURING TITLES OF POSTS */}
+            <BlogMenu blogs={blogsData} handleClick={this.handleClick} />            
+            {/* BLOG CONTENT OF A USER-SELECTED POST */}
+            <BlogPost blog={this.state.blogSelected} />
           </div>
       )}
       // STATE HAS NOTHING COLLECTED | THE BEAUTIFUL DEFAULT LANDING
       else {
         return (
           <div className='b-container'>
-            <div>{/* BLOG MENU FEATURING TITLES OF POSTS */}</div>
+            {/* BLOG MENU FEATURING TITLES OF POSTS */}
+            <BlogMenu blogs={blogsData} handleClick={this.handleClick} />
           </div>
       )}        
     }
