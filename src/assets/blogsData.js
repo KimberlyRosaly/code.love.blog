@@ -1,5 +1,6 @@
 const blogsData = [
     {
+        id: 1,
         date: "June 50th, 2525",
         time: "2:65PM",
         title: "Blog Test No. 1 TITLE",
@@ -7,6 +8,7 @@ const blogsData = [
     },
 
     {
+        id: 2,
         date: "March 31st, 1999",
         time: "4400 Hours",
         title: "No. 2, Test Blog, TiTlE",
@@ -14,6 +16,7 @@ const blogsData = [
     },
 
     {
+        id: 3,
         date: "00-00-0000",
         time: "00:00XX",
         title: "ASDFJKLZXCVBNMQWERTYUIOP",
