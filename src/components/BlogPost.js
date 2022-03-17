@@ -10,16 +10,12 @@ const BlogPost = (props) => {
     return (
         <div className='b-post-container'>
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
-            <div className='b-content-side'>
-                <div dangerouslySetInnerHTML={{ __html: sanitize(props.blog.content) }} />
+            <div className='b-post-image-side' style={{ backgroundImage: `url(${props.blog.image})` }} />            
+            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
+            <div className='b-post-content-side' dangerouslySetInnerHTML={{ __html: sanitize(props.blog.content) }} />
                 {/* A SINGLE BLOG'S CONTENT WILL LIVE HERE */}
                 {/* HTML INJECTION SANITIZED TO HELP PREVENT XSS ATTACKS */}
-                {/* TEXT SET DANGEROUSLY BECAUSE OF DESIRED HTML FORMATTING WANTING TO BE RENDERED */}
-            </div>
-            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
-            <div className='b-image-side'>
-                <img src={props.blog.image} alt="ayo, some cool art is here" />
-            </div>
+                {/* TEXT SET DANGEROUSLY BECAUSE OF DESIRED HTML FORMATTING WANTING TO BE RENDERED */}            
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
         </div>
     )

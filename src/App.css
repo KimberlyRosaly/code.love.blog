@@ -29,31 +29,33 @@ body {
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* =============================== B L O G  */
 .b-container {
-  color: green;  
-  margin-left: 250px;
-  margin-right: 250px;
+  /* color: green;   */
+  /* margin-left: 250px; */
+  /* margin-right: 250px; */
 }
-.b-dropdown-item {
-  list-style-type: none;
-  border: solid green 1px;
+.b-menu {
+  /* list-style-type: none; */
+  border: solid green 10px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.b-menu-item {
+
+
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .b-post-container {
-  display: flex;
-  /* width: 80%; */
-  /* margin: 0 auto; */
-  flex-direction: row;
-  align-content: center;
+  color: yellow;
 }
-.b-image-side {
-  flex: 0 0 50%;
-
-}
-  .b-image-side img {
-    max-width: 100%;  
-  }
-  
-  .b-content-side {
-  flex: 0 0 50%;
+.b-post-image-side {
+  height: 20vh;  
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid pink 11px;
+}  
+  .b-post-content-side {
+  border: solid purple 5px;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */

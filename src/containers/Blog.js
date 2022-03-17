@@ -34,7 +34,7 @@ class Blog extends React.Component {
             <BlogPost blog={this.state.blogSelected} />
           </div>
       )}
-      // STATE HAS NOTHING COLLECTED | THE BEAUTIFUL DEFAULT LANDING
+      //  THE BEAUTIFUL DEFAULT LANDING | STATE HAS NOTHING COLLECTED |
       else {
         return (
           <div className='b-container'>
