@@ -34,28 +34,42 @@ body {
   /* margin-right: 250px; */
 }
 .b-menu {
-  /* list-style-type: none; */
   border: solid green 10px;
+
 
   display: grid;
   grid-template-columns: 1fr;
 }
 .b-menu-item {
-
+  border: solid green 2px;
 
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .b-post-container {
   color: yellow;
 }
-.b-post-image-side {
-  height: 20vh;  
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: solid pink 11px;
-}  
-  .b-post-content-side {
-  border: solid purple 5px;
-}
+    .b-post-heading {
+      display: grid;
+      grid-auto-flow:column;
+    }
+              .b-post-image {
+                height: 20vh;  
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border: solid pink 11px;
+                
+              }  
+              .b-post-title {
+                font-size: 40pt;
+                color: blue;
+                text-shadow: 1pt 1pt white;
+                text-align: center;
+                position: relative;                
+                top: 40%;                
+                
+              }
+      .b-post-content {
+      border: solid purple 5px;
+    }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
