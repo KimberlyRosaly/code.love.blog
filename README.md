@@ -4,3 +4,5 @@
 application created with **'create-react-app'**.
 
 **'yarn'** is package manager of choice, here.
+---
+visit me @ https://www.linkedin.com/in/kimberly-rosaly/
