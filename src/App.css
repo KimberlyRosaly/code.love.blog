@@ -56,7 +56,7 @@ body {
                 height: 20vh;  
                 background-position: center;
                 background-size: contain;
-                background-repeat: no-repeat;
+                /* background-repeat: no-repeat; */
                 border: solid pink 11px;
                 
               }  
@@ -65,11 +65,17 @@ body {
                 color: blue;
                 text-shadow: 1pt 1pt white;
                 text-align: center;
-                position: relative;                
-                top: 40%;                
+                position: absolute;                
+                top: 25%;           
+                left: 25%;
+                /* display: flex;      */
+                /* word-break: break-word; */
+                max-width: 50%;
                 
               }
       .b-post-content {
       border: solid purple 5px;
     }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+
