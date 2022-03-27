@@ -59,13 +59,41 @@ body {
   width: 100vw;
 }
 .home-choices {
-  background-size: cover;  
+  background-position: center;
+  background-size: contain;  
+  background-repeat: no-repeat;
   width: 100vw;
   height: 50vh;
   display: flex;
+  justify-content: ;
 }
 .home-choices button {
   
+  padding: 20pt;
+  
+  flex: 1;
+}
+
+.h-c-1 {
+  margin-top: 10vh;
+  background-color: rgba(64, 255, 0, 0.527);
+  margin-left: 50pt;
+  border-radius: 5%;
+  box-shadow: 1pt 1pt 15pt rgba(255, 0, 162, 0.494);
+  
+}
+.h-c-2 {
+  margin-top: 15vh;
+  background-color: rgba(0, 183, 255, 0.527);
+  margin-left: 30pt;
+  border-radius: 10%;
+  box-shadow: inset 15pt 15pt rgb(89, 85, 128), 
+              5pt 5pt rgba(255, 255, 0, 0.336),
+              1pt 1pt 15pt rgba(255, 0, 162, 0.494);
+}
+.h-c-2:hover {
+  background-color: black;
+  color: orange;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* =============================== B L O G  */

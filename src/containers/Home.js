@@ -20,9 +20,11 @@ const Home = () => {
 
         <div className='home-choices' style={{backgroundImage: `url(https://www.dropbox.com/s/csy354hzgirqmgs/KimberlyRosaly.png?raw=1)`}}>
             <Link to={'/loves/code'}>
-                <button>C O D E</button>
+                <button className='h-c-1'>C O D E</button>
             </Link>
-                <button>A R T</button>
+            <Link to={'/loves'}>
+                <button className='h-c-2'>A R T</button>
+            </Link>
         </div>
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
 {/* ALLOW N E S T E D   R O U T E CHILDREN COMPONENTS TO RENDER */}
