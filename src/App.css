@@ -8,7 +8,7 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* ENTIRE APP || THE BODY ENCAPSULATES IT */
 body {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(0, 0, 0);
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
@@ -49,7 +49,7 @@ body {
   padding: 20px;
 }
 .nav ul li a:hover {
-  background-color: rgb(255, 161, 161);
+  background-color: rgba(255, 161, 161, 0.474);
   border-radius: 5%;
   box-shadow: 3px 3px white;
 }
@@ -57,6 +57,15 @@ body {
 /* =============================== H O M E  */
 .home-image {
   width: 100vw;
+}
+.home-choices {
+  background-size: cover;  
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+}
+.home-choices button {
+  
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* =============================== B L O G  */
