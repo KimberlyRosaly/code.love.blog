@@ -14,6 +14,8 @@ const Home = () => {
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
             <Navigation />
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
+        <img className="home-image" src="https://www.dropbox.com/s/csy354hzgirqmgs/KimberlyRosaly.png?raw=1" />
+{/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
 {/* ALLOW N E S T E D   R O U T E CHILDREN COMPONENTS TO RENDER */}
             <Outlet />
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}

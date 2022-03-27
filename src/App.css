@@ -32,7 +32,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 10px;
-  background-color: green;
+  background-color: rgb(26, 26, 26);
   
 }
 .nav ul li {
@@ -49,9 +49,14 @@ body {
   padding: 20px;
 }
 .nav ul li a:hover {
-  background-color: aqua;
+  background-color: rgb(255, 161, 161);
   border-radius: 5%;
-  box-shadow: 3px 3px rgb(255, 0, 0);
+  box-shadow: 3px 3px white;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =============================== H O M E  */
+.home-image {
+  width: 100vw;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* =============================== B L O G  */
@@ -83,7 +88,7 @@ body {
                 height: 20vh;  
                 background-position: center;
                 background-size: contain;
-                /* background-repeat: no-repeat; */
+                background-repeat: no-repeat;
                 border: solid pink 11px;
                 
               }  
