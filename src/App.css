@@ -30,17 +30,28 @@ body {
 /* =================== N A V I G A T I O N  */
 .nav ul {
   list-style-type: none;
+  margin: 0;
+  padding: 10px;
   background-color: green;
-  overflow: hidden;
+  
+}
+.nav ul li {
+  display: inline;
+  border-right: 2px solid pink;
+}
+.nav ul li:last-child {
+  border-right: none;
 }
 .nav ul li a {
-  display: block;
+  width: 95px;  
   color: yellow;
   text-shadow: 10px;
   padding: 20px;
 }
 .nav ul li a:hover {
   background-color: aqua;
+  border-radius: 5%;
+  box-shadow: 3px 3px rgb(255, 0, 0);
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* =============================== B L O G  */
