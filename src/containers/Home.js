@@ -15,9 +15,8 @@ const Home = () => {
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
             <Navigation />
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
-        <img className="home-image" src="" />
+        
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
-
         <div className='home-choices' style={{backgroundImage: `url(https://www.dropbox.com/s/csy354hzgirqmgs/KimberlyRosaly.png?raw=1)`}}>
             <Link to={'/loves/code'}>
                 <button className='h-c-1'>C O D E</button>
