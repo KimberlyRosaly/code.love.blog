@@ -8,13 +8,20 @@ import { Link } from 'react-router-dom'
 const Navigation = () => {
     return (
         <div>
-            <Link to={'/'}>s t a r t  o v e r</Link>
-            <br />
-            <Link to={'/loves'}>g o  h o m e</Link>
-            <br />
-            <Link to={'/loves/code'}>g o  c o d e</Link>
-            <br />
-            <Link to={'/loves/code/blogs'}>g o  b l o g</Link>
+            <ul>
+                <li><Link to={'/'}>
+                    s t a r t  o v e r
+                </Link></li>
+                <li><Link to={'/loves'}>
+                    g o  h o m e
+                </Link></li>
+                <li><Link to={'/loves/code'}>
+                    g o  c o d e
+                </Link></li>
+                <li><Link to={'/loves/code/blogs'}>
+                    g o  b l o g
+                </Link></li>
+            </ul>
         </div>
     )
 }

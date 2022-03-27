@@ -23,7 +23,17 @@ const blogsData = [
         time: "00:00XX",
         title: "ASDFJK LZXCVBNM QWERTYU IOP",
         image: "https://www.dropbox.com/s/2qdiu0281n5pt0t/Redux.png?raw=1",
-        content: "this is a test <h1> this is <hr /> another test </h1> LLKAJOIER OINFEWOIJFJ OKJVWEOIETWOKJ OINWFOIJEFW  OJEWFWOINF DFSKLNF  FDLKNFLKj FLKNSDFLknF FKLJNFSDLkjFSD FOKJFDlkFSDkljFSD jfsdlkjfsdljkfsljfsljkfljfsljkfs LKJDSFLKJoijF SFKLNk sflkjlfjsflkj lskjlsfjsfiewuriwuoksjoisjgflsjlsfjl LKnfdlknflkjsdlkjsflkjsflkjsflkjvknsdvlk lkjfslkjfslj sfl flkjslfkjlkjfs l  fwlkjfojwf oijlskjfg amn osij ;slakheogfhegl;heg ;ljhagl;kjhdfgkjhg jahg ;kgh h jhgajghksdjghuiwhytoiwhkjng"
+        content: "this is a test <h1> this is <hr /> another test </h1> LLKAJOIER OINFEWOIJFJ OKJVWEOIETWOKJ OINWFOIJEFW  OJEWFWOINF DFSKLNF  FDLKNFLKj FLKNSDFLknF FKLJNFSDLkjFSD FOKJFDlkFSDkljFSD jfsdlkjfsdljkfsljfsljkfljfsljkfs LKJDSFLKJoijF SFKLNk sflkjlfjsflkj lskjlsfjsfiewuriwuoksjoisjgflsjlsfjl LKnfdlknflkjsdlkjsflkjsflkjsflkjvknsdvlk lkjfslkjfslj sfl flkjslfkjlkjfs l  fwlkjfojwf oijlskjfg amn osij ;slakheogfhegl;heg ;ljhagl;kjhdfgkjhg jahg ;kgh h jhgajghksdjghuiwhytoiwhkjng",
+        background: ""
     }
 ]
 export default blogsData;
+
+
+
+
+
+
+
+
+
