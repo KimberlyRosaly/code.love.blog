@@ -27,6 +27,22 @@ body {
   height: 100vh;  
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =================== N A V I G A T I O N  */
+.nav ul {
+  list-style-type: none;
+  background-color: green;
+  overflow: hidden;
+}
+.nav ul li a {
+  display: block;
+  color: yellow;
+  text-shadow: 10px;
+  padding: 20px;
+}
+.nav ul li a:hover {
+  background-color: aqua;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /* =============================== B L O G  */
 .b-container {
   /* color: green;   */

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 // N A V I G A T I O N  B A R
 const Navigation = () => {
     return (
-        <div>
+        <div className='nav'>
             <ul>
                 <li><Link to={'/'}>
                     s t a r t  o v e r
