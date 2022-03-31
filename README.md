@@ -12,10 +12,10 @@ application created with '```create-react-app```'.
 Check out my Figma on this project 
 
 # ☟
-<iframe style="border: 3px solid rgba(0, 0, 0, 0.1);" width="300" height="300" 
-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdEdmckMoSw7bDaZpIMdc2R%2FCODE-LOVE-BLOG%3Fnode-id%3D0%253A1"></iframe>
-</div>
 
+[<img alt="alt_text" width="250px" src="src/assets/figma_image_0.jpg" />](https://www.figma.com/file/dEdmckMoSw7bDaZpIMdc2R/CODE-LOVE-BLOG?node-id=0%3A1)
+
+</div>
 
 ---
 visit me @ https://www.linkedin.com/in/kimberly-rosaly/
