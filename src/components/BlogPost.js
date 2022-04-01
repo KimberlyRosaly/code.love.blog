@@ -1,12 +1,18 @@
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-import { sanitize } from 'dompurify'
-// PREVENT CROSS-SITE SCRIPTING (XSS) INJECTION ATTACKS
+import { useEffect } from 'react';
+import { useRef } from 'react';
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 // F U N C T I O N A L   C O M P O N E N T
 const BlogPost = (props) => {
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+    const dummyDiv = useRef(null)
+    const scrollToBottom = () => { dummyDiv.current?.scrollIntoView({ behavior: "smooth" }) }
+    useEffect( () => {scrollToBottom()} )
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
     return (
         <div className='b-post-container'>
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
@@ -15,10 +21,11 @@ const BlogPost = (props) => {
                 <div className='b-post-title'>{props.blog.title}</div>
             </div>
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
-            <div className='b-post-content' dangerouslySetInnerHTML={{ __html: sanitize(props.blog.content) }} />
-                {/* A SINGLE BLOG'S CONTENT WILL LIVE HERE */}
-                {/* HTML INJECTION SANITIZED TO HELP PREVENT XSS ATTACKS */}
-                {/* TEXT SET DANGEROUSLY BECAUSE OF DESIRED HTML FORMATTING WANTING TO BE RENDERED */}            
+            <div>{props.blog.content}</div>           
+            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
+
+            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
+            <div ref={dummyDiv} />
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
         </div>
     )
