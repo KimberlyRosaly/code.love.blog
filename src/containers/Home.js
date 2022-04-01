@@ -43,7 +43,7 @@ const Home = () => {
                 </button>
             </Link>
            
-            <Link to={'/loves'}>
+            <Link to={'/loves/art'}>
                 <button className='h-c-2'>
                     A R T
                 </button>
