@@ -5,10 +5,11 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import artData from '../assets/artData';
+import ArtGallery from './ArtGallery';
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
-// A R T   P A G E
+// A R T  ♥  P A G E
 const Art = () => {
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 const dummyDiv = useRef(null)
@@ -19,9 +20,9 @@ useEffect( () => {scrollToBottom()} )
     return (<>
         <div>
             
-            ART WILL LIVE HERE!!! ♥ 
+            ART WILL LIVE HERE!!! ♥             
 
-            {console.log(artData.length)}
+            <ArtGallery />
 
         </div>
 
