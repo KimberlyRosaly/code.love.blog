@@ -4,6 +4,8 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useRef } from 'react';
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+import artData from '../assets/artData';
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
 // A R T   P A G E
@@ -18,6 +20,8 @@ useEffect( () => {scrollToBottom()} )
         <div>
             
             ART WILL LIVE HERE!!! ♥ 
+
+            {console.log(artData.length)}
 
         </div>
 
