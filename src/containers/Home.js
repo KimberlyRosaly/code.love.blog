@@ -16,8 +16,15 @@ import Navigation from '../components/Navigation';
 
 // H O M E  P A G E
 const Home = () => {
-
-    // = - = - = - = - = - = - = - = - = - = - = - = - = - = - = = - = - = - =  
+    // = - = - = - = - = - = - = - = - = - = - = - = - = - = - = = - = - = - =  *:･ﾟ✧*:･ﾟ
+    const backgroundStyle = {
+        backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.95) 100%, rgba(0,0,0,0.95) 100%)
+        ,
+        url(https://www.dropbox.com/s/csy354hzgirqmgs/KimberlyRosaly.png?raw=1)
+        `,    
+        backgroundRepeat: 'no-repeat'
+    }
+    // = - = - = - = - = - = - = - = - = - = - = - = - = - = - = = - = - = - =  *:･ﾟ✧*:･ﾟ
     // SET AN INITIAL, DEFAULT VALUE ON OUR DOM REFERENCING METHOD TO USE LATER
     const dummyDiv = useRef(null)
     const scrollToBottom = () => { dummyDiv.current?.scrollIntoView({ behavior: "smooth" }) }
@@ -31,7 +38,7 @@ const Home = () => {
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
         
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
-        <div className='home-choices-background' style={{backgroundImage: `url(https://www.dropbox.com/s/csy354hzgirqmgs/KimberlyRosaly.png?raw=1)`}}>
+        <div className='home-choices-background' style={backgroundStyle}>
             
 
                 <div className='home-choices' >
