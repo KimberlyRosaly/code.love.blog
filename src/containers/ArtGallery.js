@@ -16,7 +16,7 @@ const ArtGallery = () => {
     return (<>
         <div>
             
-            ART GALLERY WILL LIVE HERE!!! ♥ 
+            {/* ART GALLERY WILL LIVE HERE!!! ♥  */}
 
             <Artworks />
 

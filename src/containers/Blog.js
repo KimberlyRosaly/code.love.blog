@@ -26,7 +26,7 @@ class Blog extends React.Component {
     }
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
     scrollToBottom = () => {
-      this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+      this.dummyDiv.scrollIntoView({ behavior: "smooth" });
     }
     componentDidMount() {
       this.scrollToBottom();
@@ -50,7 +50,7 @@ class Blog extends React.Component {
             <BlogPost blog={this.state.blogSelected} />
 
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
-            <div ref={(el) => { this.messagesEnd = el; }} />
+            <div ref={(el) => { this.dummyDiv = el; }} />
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}      
           </div>
           //* = = = = = = = = = = = = = = = = = = = = = = = = = = = = B L O G
@@ -64,7 +64,7 @@ class Blog extends React.Component {
             <BlogMenu blogs={blogsData} handleClick={this.handleClick} />
 
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
-            <div ref={(el) => { this.messagesEnd = el; }} />
+            <div ref={(el) => { this.dummyDiv = el; }} />
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}            
           </div>
           //^ = = = = = = = = = = = = = = = = = = = = = = = = = = L A N D I N G
