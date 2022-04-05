@@ -12,10 +12,14 @@ const Artworks = () => {
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
     return (
-        <div className=''>
-        <div class="">
-                {artData.map((a) => console.log(a.image_url))}                            
-        </div>      
+        <div className='gallery'>
+            <div className='gallery-wrapper'>   
+                {artData.map((a) => 
+                    
+                        <img key={a.id} src={a.image_url}></img>
+                    
+                )}
+            </div>      
         </div>      
     )
 }
