@@ -10,37 +10,34 @@ import { Link } from 'react-router-dom';
 
 // C O D E   P A G E
 const Code = () => {
-
+    // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     const dummyDiv = useRef(null)
-
-    const scrollToBottom = () => {
-        dummyDiv.current?.scrollIntoView({ behavior: "smooth" })
-    }
-
-    useEffect(() => {
-        scrollToBottom()
-    })
-
+    const scrollToBottom = () => { dummyDiv.current?.scrollIntoView({ behavior: "smooth" }) }
+    useEffect(() => { scrollToBottom() })
+    // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     return (
         <div>
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
-            CODE CONTAINER LIVES HERE ♥
+            
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
-            <div>
-                <div>
+            <div className='code-choice-container'>
+
+                <div className='c-c-1'>
                     <a href='https://github.com/KimberlyRosaly'>
-                    <button className='h-c-1'>
+                    <button>
                             PROJECTS
                     </button>
                     </a>
                 </div>
-                <div>
+
+                <div className='c-c-2'>
                     <Link to={'/loves/code/blogs'}>
-                    <button className='h-c-1'>
+                    <button>
                             BLOG
                     </button>
                     </Link>
                 </div>
+
             </div>
 {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */}
 {/* ALLOW CHILDREN COMPONENTS | NESTED ROUTING */}
