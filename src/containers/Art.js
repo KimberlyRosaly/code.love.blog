@@ -20,8 +20,6 @@ useEffect( () => {scrollToBottom()} )
     return (<>
         <div>
             
-            ART WILL LIVE HERE!!! ♥             
-
             <ArtGallery />
 
         </div>
