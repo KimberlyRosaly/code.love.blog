@@ -20,9 +20,13 @@ const BlogPost = (props) => {
                 <div className='b-post-image' style={{ backgroundImage: `url(${props.blog.image})` }} />            
                 <div className='b-post-title'>{props.blog.title}</div>
             </div>
+            {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}            
+            <div style={{ textAlign: 'right'}}>{props.blog.date}{props.blog.time}</div>
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
-            <div>{props.blog.content}</div>           
+            <div className='b-post-content'>{props.blog.content}</div>           
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
+
+
 
             {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
             <div ref={dummyDiv} />
