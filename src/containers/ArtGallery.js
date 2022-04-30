@@ -2,10 +2,11 @@
 import React from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import { useEffect } from 'react';
-import { useRef } from 'react';
+import { useRef } from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-import artData from '../assets/artData';
-import Artworks from '../components/Artworks';
+import artData from '../assets/artData'
+import Artworks from '../components/Artworks'
+import Contact from '../components/Contact'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
@@ -14,14 +15,15 @@ const ArtGallery = () => {
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
     return (<>
-        <div>
-            
-            {/* ART GALLERY WILL LIVE HERE!!! ♥  */}
 
+        <div>            
+            {/* ART GALLERY */}
             <Artworks />
-
         </div>
 
+        <div>
+            <Contact />
+        </div>
   
     </>)
 }
