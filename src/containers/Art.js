@@ -1,33 +1,26 @@
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 import React from 'react'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-import { useEffect } from 'react';
-import { useRef } from 'react';
-// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-import artData from '../assets/artData';
-import ArtGallery from './ArtGallery';
+import ArtGallery from './ArtGallery'
+import Contact from '../components/Contact'
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 
 // A R T  ♥  P A G E
 const Art = () => {
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-const dummyDiv = useRef(null)
-const scrollToBottom = () => { dummyDiv.current?.scrollIntoView({ behavior: "smooth" }) }
-useEffect( () => {scrollToBottom()} )
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-    return (<>
+
+    return (
         <div>
             
             <ArtGallery />
 
+            <Contact />
+
         </div>
 
-        {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
-        <div ref={dummyDiv} />
-        {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
         
-    </>)
+        )
 }
 export default Art;
